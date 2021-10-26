@@ -8,7 +8,7 @@ def make_pts(N):
         x_1 = random.random()
         x_2 = random.random()
         X.append((x_1, x_2))
-    return X
+    return X+1
 
 
 @dataclass

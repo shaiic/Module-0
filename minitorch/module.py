@@ -35,7 +35,7 @@ class Module:
 
 
         Returns:
-            list of pairs: Contains the name and :class:`Parameter` of each ancestor parameter.
+            dict: Contains the name and :class:`Parameter` of each ancestor parameter.
         """
         # TODO: Implement for Task 0.4.
         raise NotImplementedError('Need to implement for Task 0.4')

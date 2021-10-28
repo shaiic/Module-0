@@ -59,12 +59,10 @@ class Module:
     def parameters(self):
         "Enumerate over all the parameters of this module and its descendents."
         # TODO: Implement for Task 0.4.
-        res = []
-        for k,v in self._parameters.items():
-            res.append(v)
+        res = list(self._parameters.values())
 
         for child_ in self._modules:
-            child_params = self._modules[child_].named_parameters()
+            child_params = self._modules[child_].parameters()
             for item in child_params:
                 res.append(item)
 
